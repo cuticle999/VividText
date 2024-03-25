@@ -1,4 +1,4 @@
-pub mod lolcat {
+pub mod vividtext {
     pub enum OutputFormat {
         Ansi, // ANSIエスケープコードを使用して8ビットカラーを適用
         EightBit, // 直接8ビットカラーコードを使用（ターミナルでの表示に適している）

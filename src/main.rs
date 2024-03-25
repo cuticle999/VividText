@@ -1,6 +1,6 @@
 use std::fs::File;
 use std::io::{self, Read};
-use gradation::lolcat::{apply_gradient, OutputFormat}; // ここで`OutputFormat`もインポート
+use gradation::vividtext::{apply_gradient, OutputFormat}; // ここで`OutputFormat`もインポート
 
 fn main() -> io::Result<()> {
     let file_path = "./like.text"; // 実際のファイルパスに置き換えてください
