@@ -10,6 +10,11 @@ license = "MIT OR Apache-2.0"
 name = "vividtext"
 path = "src/lib.rs"
 
+[[bin]]
+name = "vividtext"
+path = "src/main.rs"
+
+
 [dependencies]
 ansi_term = "0.12.1"
 clap = "4.5.3"

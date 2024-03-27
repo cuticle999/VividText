@@ -1,6 +1,6 @@
 // cmd.rs
 use clap::{Arg, Command};
-use colorful_text::{self, OutputFormat};
+use vividtext::colorful_text::{self, OutputFormat};
 
 pub fn run_cli() {
     let matches = Command::new("colorful_text")
