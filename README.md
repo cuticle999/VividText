@@ -45,6 +45,7 @@ fn main() -> io::Result<()> {
 
 How to use with CLI
 If you specify a text file, etc., the text will be colored on the CLI.
+
 ```cargo install vividtext ```
 
 ```vividtext your_file```
