@@ -2,8 +2,6 @@
 This is a library for coloring text.
 At this stage, it is designed for output on the CLI.
 
-![alt text](vividtext-cli.png)
-
 # How to use
 Add a dependency
 ```cargo add vividtext```
@@ -42,12 +40,6 @@ fn main() -> io::Result<()> {
     Ok(())
 }
 ```
-
-How to use with CLI
-If you specify a text file, etc., the text will be colored on the CLI.
-```cargo install vividtext ```
-
-```vividtext your_file```
 
 # license
 MIT

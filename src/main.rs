@@ -1,27 +1,31 @@
-// cmd.rs
-use clap::{Arg, Command};
-use vividtext::colorful_text::{self, OutputFormat};
+// use std::fs::File;
+// use std::io::{self, Read};
+// use vividtext::colorful_text::{apply_gradient, OutputFormat}; // ここで`OutputFormat`もインポート
 
-pub fn run_cli() {
-    let matches = Command::new("colorful_text")
-        .version("0.1.0")
-        .about("Applies colorful gradients to text")
-        .arg(Arg::new("text").required(true).index(1))
-        .arg(Arg::new("format")
-             .short('f')
-             .long("format")
-             .takes_value(true)
-             .possible_values(["ansi", "eightbit"])
-             .default_value("ansi"))
-        .get_matches();
+// fn main() -> io::Result<()> {
+//     let file_path = "./like.text"; // 実際のファイルパスに置き換えてください
+//     let mut file = File::open(file_path)?;
+//     let mut contents = String::new();
+//     file.read_to_string(&mut contents)?;
 
-    let text = matches.value_of("text").unwrap();
-    let format = match matches.value_of("format").unwrap() {
-        "ansi" => OutputFormat::Ansi,
-        "eightbit" => OutputFormat::EightBit,
-        _ => unreachable!(),
-    };
+//     let gradient_text = apply_gradient(&contents, OutputFormat::Ansi); // ANSI形式の出力が必要な場合
+//     // または
+//     // let gradient_text = apply_gradient(&contents, OutputFormat::Rgb); // RGB形式の出力が必要な場合
+//     println!("{}", gradient_text);
 
-    let result = colorful_text::apply_gradient(text, format);
-    println!("{}", result);
+//     Ok(())
+// }
+
+// `colorful_text`モジュールとその内容を`lib.rs`から直接インポートするための`use`文を追加
+// `vividtext`クレートから`colorful_text`モジュールの内容をインポート
+
+// 指定したテキストを表示するためのコード例
+use vividtext::colorful_text::{apply_gradient, OutputFormat};
+
+fn main() {
+    let text = "Hello, world!";
+    // 修正したインポートを使用
+    let formatted_text = apply_gradient(text, OutputFormat::Ansi);
+    println!("{}", formatted_text);
 }
+

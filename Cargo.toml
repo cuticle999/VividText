@@ -1,6 +1,6 @@
 [package]
 name = "vividtext"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "Library to change text color"
 repository = "https://github.com/cuticle999/VividText"
@@ -9,11 +9,6 @@ license = "MIT OR Apache-2.0"
 [lib]
 name = "vividtext"
 path = "src/lib.rs"
-
-[[bin]]
-name = "vividtext"
-path = "src/main.rs"
-
 
 [dependencies]
 ansi_term = "0.12.1"
