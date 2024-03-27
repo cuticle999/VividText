@@ -1,4 +1,5 @@
-pub mod vividtext {
+pub mod colorful_text {
+    #[derive(Clone)]
     pub enum OutputFormat {
         Ansi, // ANSIエスケープコードを使用して8ビットカラーを適用
         EightBit, // 直接8ビットカラーコードを使用（ターミナルでの表示に適している）

@@ -1,19 +1,13 @@
 [package]
-name = "gradation"
+name = "vividtext"
 version = "0.1.0"
 edition = "2021"
 
 # ライブラリとしての設定
 [lib]
-name = "gradation"
+name = "vividtext"
 path = "src/lib.rs"
-
-# 実行ファイルとしての設定
-[[bin]]
-name = "gradation_app" # 実行時の名前
-path = "src/main.rs"
 
 [dependencies]
 ansi_term = "0.12.1"
 clap = "4.5.3"
-colored = "2.1.0"
