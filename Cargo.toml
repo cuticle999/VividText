@@ -2,8 +2,10 @@
 name = "vividtext"
 version = "0.1.0"
 edition = "2021"
+description = "Library to change text color"
+repository = "https://github.com/cuticle999/VividText"
+license = "MIT OR Apache-2.0"
 
-# ライブラリとしての設定
 [lib]
 name = "vividtext"
 path = "src/lib.rs"
